@@ -21,7 +21,11 @@ main {
   background: #FFFFFF;
 }
 
-.wrapper {
+.message__block {
+  display: none;
+}
+
+.message__wrapper {
   padding: 8px;
 }
 
@@ -44,6 +48,12 @@ main {
 .exit-btn {
   width: 66px;
   height: 32px;
+}
+
+
+.tabs__container {
+  width: 304px;
+  height: 437px;
 }
 
 .chatbox {
@@ -81,8 +91,6 @@ main {
   margin-bottom: 8px;
   border-radius: 10px;
 }
-
-
 
 .chat__message-time {
   font-style: italic;
@@ -129,4 +137,67 @@ main {
 
 .send-btn:active {
   filter: invert(22%) sepia(72%) saturate(249%) hue-rotate(131deg) brightness(96%) contrast(85%);
+}
+
+/* ---- setting block ---- */
+
+.setting__block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 321px;
+  height: 533px;
+  background: #535353;
+}
+
+.setting__content {
+  width: 273px;
+  height: 319px;
+  background: #FFFFFF;
+}
+
+.setting__wrapper {
+  padding: 16px 14px;
+}
+
+.setting__header {
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.setting__title, .creation__name p {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+}
+
+.creation__name p {
+  margin-bottom: 8px;
+}
+
+.close-btn {
+  font-size: 24px;
+  line-height: 70%;
+  color: #000000;
+  opacity: 0.45;
+  transform: rotate(-45deg);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  opacity: 0.6;
+}
+
+.creation__name-input {
+  width: 207px;
+  height: 32px;
+  padding: 7px 0 7px 7px;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;;
+  outline: none;
 }

@@ -12,58 +12,79 @@
 </head>
 <body>
   <main class="main">
-    <div class="wrapper">
-      <div class="buttons">
-        <button class="setting-btn">Настройки</button>
-        <button class="exit-btn">Выйти</button>
-      </div>
-      <div class="chatbox">
-        <div class="chat__item__personal">
-          <div class="chat__messages">
-            <div class="chat__message">
-              <div class="chat__message-content">Я: Добрый день!</div>
-              <div class="chat__message-time">18:45</div>
-            </div>
-          </div>
-        </div>
-          
-        <div class="chat__item__client">
-          <div class="chat__messages">
-            <div class="chat__message">
-              <div class="chat__message-content">Собеседник мой: Добрый день!</div>
-              <div class="chat__message-time">18:45</div>
-            </div>
-          </div>
-        </div>
 
-        <div class="chat__item__client">
-          <div class="chat__messages">
-            <div class="chat__message">
-              <div class="chat__message-content">Собеседник мой: А это второе и, кажется, оно очень 
-                длинное, чтобы поместиться на 
-                одной строке</div>
-              <div class="chat__message-time">18:45</div>
-            </div>
+    <div class="setting__block">
+      <div class="setting__content">
+        <div class="setting__wrapper">
+          <div class="setting__header">
+            <p class="setting__title">Настройки</p>
+            <button class="close-btn">+</button>
           </div>
-        </div>
-        
-        <div class="chat__item__personal">
-          <div class="chat__messages">
-            <div class="chat__message">
-              <div class="chat__message-content">Я: Добрый день!</div>
-              <div class="chat__message-time">18:45</div>
+          <form action="#" class="creation__name">
+            <p>Имя в чате</p>
+            <div class="sending__block">
+              <input type="text" class="creation__name-input" placeholder="Введите имя">
+              <button class="send-btn">
+                <img src="https://img.icons8.com/external-flatart-icons-outline-flatarticons/64/000000/external-send-basic-ui-elements-flatart-icons-outline-flatarticons.png"/>
+             </button>
             </div>
-          </div>
+          </form>
         </div>
       </div>
-      <div class="sending__block">
-        <input type="text" name="" id="" class="input" placeholder="Cообщение..">
-         <button class="send-btn">
-          <img src="https://img.icons8.com/external-flatart-icons-outline-flatarticons/64/000000/external-send-basic-ui-elements-flatart-icons-outline-flatarticons.png"/>
-         </button>
-      </div>
-      
+
     </div>
+    <div class="message__block">
+      <div class="message__wrapper">
+        <div class="buttons">
+          <button class="setting-btn">Настройки</button>
+          <button class="exit-btn">Выйти</button>
+        </div>
+        <div class="chatbox">
+          <div class="chat__item__personal">
+              <div class="chat__message">
+                <div class="chat__message-content">Я: Добрый день!</div>
+                <div class="chat__message-time">18:45</div>
+              </div>
+          </div>
+    
+          <div class="chat__item__client">
+            <div class="chat__messages">
+              <div class="chat__message">
+                <div class="chat__message-content">Собеседник мой: Добрый день!</div>
+                <div class="chat__message-time">18:45</div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="chat__item__client">
+            <div class="chat__messages">
+              <div class="chat__message">
+                <div class="chat__message-content">Собеседник мой: А это второе и, кажется, оно очень 
+                  длинное, чтобы поместиться на 
+                  одной строке</div>
+                <div class="chat__message-time">18:45</div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="chat__item__personal">
+            <div class="chat__messages">
+              <div class="chat__message">
+                <div class="chat__message-content">Я: Добрый день!</div>
+                <div class="chat__message-time">18:45</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="sending__block">
+          <input type="text" name="" id="" class="input" placeholder="Cообщение..">
+           <button class="send-btn">
+            <img src="https://img.icons8.com/external-flatart-icons-outline-flatarticons/64/000000/external-send-basic-ui-elements-flatart-icons-outline-flatarticons.png"/>
+           </button>
+        </div>
+      </div>
+    </div>
+    
   </main>
 
   <script src="./main.js"></script>
