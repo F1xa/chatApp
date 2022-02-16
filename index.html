@@ -4,57 +4,65 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./style.css">
   <title>ChatApp</title>
 </head>
 <body>
   <main class="main">
     <div class="wrapper">
-      <button class="setting-btn">Настройки</button>
-      <button class="exit-btn">Выйти</button>
+      <div class="buttons">
+        <button class="setting-btn">Настройки</button>
+        <button class="exit-btn">Выйти</button>
+      </div>
       <div class="chatbox">
         <div class="chat__item__personal">
-          <div class="chat__mesages">
+          <div class="chat__messages">
             <div class="chat__message">
-              <p class="chat__message-content">Я: Добрый день!</p>
-              <p class="chat__message-time">18:45</p>
+              <div class="chat__message-content">Я: Добрый день!</div>
+              <div class="chat__message-time">18:45</div>
             </div>
           </div>
         </div>
           
         <div class="chat__item__client">
-          <div class="chat__mesages">
+          <div class="chat__messages">
             <div class="chat__message">
-              <p class="chat__message-content">Собеседник мой: Добрый день!</p>
-              <p class="chat__message-time">18:45</p>
+              <div class="chat__message-content">Собеседник мой: Добрый день!</div>
+              <div class="chat__message-time">18:45</div>
             </div>
           </div>
         </div>
 
-        <div class="chat__item__personal">
-          <div class="chat__mesages">
+        <div class="chat__item__client">
+          <div class="chat__messages">
             <div class="chat__message">
-              <p class="chat__message-content">Собеседник мой: А это второе и, кажется, оно очень 
+              <div class="chat__message-content">Собеседник мой: А это второе и, кажется, оно очень 
                 длинное, чтобы поместиться на 
-                одной строке</p>
-              <p class="chat__message-time">18:45</p>
+                одной строке</div>
+              <div class="chat__message-time">18:45</div>
             </div>
           </div>
         </div>
         
         <div class="chat__item__personal">
-          <div class="chat__mesages">
+          <div class="chat__messages">
             <div class="chat__message">
-              <p class="chat__message-content">Я: Добрый день!</p>
-              <p class="chat__message-time">18:45</p>
+              <div class="chat__message-content">Я: Добрый день!</div>
+              <div class="chat__message-time">18:45</div>
             </div>
           </div>
         </div>
       </div>
-      <input type="text" name="" id="" class="input" placeholder="сообщение..">
-      <button class="button">
-        <img src="https://img.icons8.com/external-flatart-icons-outline-flatarticons/64/000000/external-send-basic-ui-elements-flatart-icons-outline-flatarticons.png"/>
-      </button>
+      <div class="sending__block">
+        <input type="text" name="" id="" class="input" placeholder="Cообщение..">
+         <button class="send-btn">
+          <img src="https://img.icons8.com/external-flatart-icons-outline-flatarticons/64/000000/external-send-basic-ui-elements-flatart-icons-outline-flatarticons.png"/>
+         </button>
+      </div>
+      
     </div>
   </main>
 
