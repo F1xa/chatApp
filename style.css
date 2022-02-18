@@ -21,8 +21,16 @@ main {
   background: #FFFFFF;
 }
 
-.message__block {
+.message {
   display: none;
+}
+
+.hide {
+  display: none;
+}
+
+.active {
+  display: block;
 }
 
 .message__wrapper {
@@ -35,7 +43,10 @@ main {
   margin-bottom: 8px;
 }
 
-.setting-btn, .exit-btn {
+.setting-btn,
+.exit-btn,
+.authorization-btn,
+.confirm-btn {
   width: 98px;
   height: 32px;
   background: #FFFFFF;
@@ -43,6 +54,7 @@ main {
   line-height: 19px;
   color: #000000;
   border: 1px solid #000000;
+  cursor: pointer;
 }
 
 .exit-btn {
@@ -50,10 +62,24 @@ main {
   height: 32px;
 }
 
+.setting-btn:hover, .exit-btn:hover {
+  opacity: 0.6;
+}
 
 .tabs__container {
   width: 304px;
   height: 437px;
+}
+
+.chatbox__container {
+    height: 437px;
+    overflow: hidden auto;
+    border: 1px solid #000000;
+    margin-bottom: 8px;
+}
+
+.chatbox__container::-webkit-scrollbar {
+  width: 0;
 }
 
 .chatbox {
@@ -62,10 +88,7 @@ main {
   flex-direction: column;
   justify-content: flex-end;
   padding: 8px;
-  margin-bottom: 8px;
-  width: 304px;
-  height: 437px;
-  border: 1px solid #000000;
+  min-height: 100%;
 }
 
 .chat__item__client {
@@ -107,7 +130,7 @@ main {
   color: #000000;
 }
 
-.sending__block {
+.sending__block, .sending__form {
   display: flex;
   justify-content: space-between;
 }
@@ -122,7 +145,8 @@ main {
   outline: none;
 }
 
-.send-btn, img {
+.send-btn,
+.setting__send-btn, img {
     width: 29px;
     height: 32px;
     text-align: center;
@@ -131,7 +155,11 @@ main {
     cursor: pointer;
 }
 
-.send-btn:hover {
+.send-btn:hover,
+.setting-btn:hover,
+.exit-btn:hover,
+.authorization-btn:hover,
+.confirm-btn:hover {
   opacity: 0.6;
 }
 
@@ -141,7 +169,13 @@ main {
 
 /* ---- setting block ---- */
 
-.setting__block {
+.setting {
+  display: none;
+}
+
+.setting__block, 
+.authorization__block,
+.confirm__block {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -150,23 +184,32 @@ main {
   background: #535353;
 }
 
-.setting__content {
+.setting__content,
+.authorization__content,
+.confirm__content {
   width: 273px;
   height: 319px;
   background: #FFFFFF;
 }
 
-.setting__wrapper {
+.setting__wrapper,
+.authorization__wrapper,
+.confirm__wrapper {
   padding: 16px 14px;
 }
 
-.setting__header {
+.setting__header,
+.authorization__header,
+.confirm__header {
   margin-bottom: 16px;
   display: flex;
   justify-content: space-between;
 }
 
-.setting__title, .creation__name p {
+.setting__title,
+.creation__name p,
+.authorization__title,
+.confirm__title {
   font-weight: normal;
   font-size: 16px;
   line-height: 19px;
@@ -192,7 +235,9 @@ main {
   opacity: 0.6;
 }
 
-.creation__name-input {
+.creation__name-input,
+.email-input,
+.confirm-input {
   width: 207px;
   height: 32px;
   padding: 7px 0 7px 7px;
@@ -200,4 +245,47 @@ main {
   line-height: 19px;
   color: #000000;;
   outline: none;
+}
+
+/* ---Authorization----- */
+
+.authorization {
+  display: block;
+}
+
+.authorization__header {
+  margin-bottom: 70px;
+}
+
+.authorization-btn {
+  width: 120px;
+  height: 34px;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+}
+
+.email-input {
+  margin-bottom: 7px;
+  border: 1px solid #000000;
+}
+
+/* ---Confirm--- */
+
+.confirm {
+  display: block;
+}
+
+.confirm__header {
+  margin-bottom: 70px;
+}
+
+.confirm-btn {
+  width: 62px;
+  height: 33px;
+}
+
+.confirm-input {
+  margin-bottom: 7px;
+  border: 1px solid #000000;
 }

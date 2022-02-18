@@ -12,81 +12,123 @@
 </head>
 <body>
   <main class="main">
-
-    <div class="setting__block">
-      <div class="setting__content">
-        <div class="setting__wrapper">
-          <div class="setting__header">
-            <p class="setting__title">Настройки</p>
-            <button class="close-btn">+</button>
-          </div>
-          <form action="#" class="creation__name">
-            <p>Имя в чате</p>
-            <div class="sending__block">
-              <input type="text" class="creation__name-input" placeholder="Введите имя">
-              <button class="send-btn">
-                <img src="https://img.icons8.com/external-flatart-icons-outline-flatarticons/64/000000/external-send-basic-ui-elements-flatart-icons-outline-flatarticons.png"/>
-             </button>
+    <section class="setting">
+      <div class="setting__block">
+        <div class="setting__content">
+          <div class="setting__wrapper">
+            <div class="setting__header">
+              <p class="setting__title">Настройки</p>
+              <button class="close-btn">+</button>
             </div>
-          </form>
-        </div>
+            <form action="#" class="creation__name">
+              <p>Имя в чате</p>
+              <div class="sending__block">
+                <input type="text" class="creation__name-input" placeholder="Введите имя">
+                <button class="setting__send-btn">
+                  <img src="https://img.icons8.com/external-flatart-icons-outline-flatarticons/64/000000/external-send-basic-ui-elements-flatart-icons-outline-flatarticons.png"/>
+               </button>
+              </div>
+            </form>
+          </div>
+        </div>  
       </div>
-
-    </div>
-    <div class="message__block">
+    </section>
+    <section class="message">
       <div class="message__wrapper">
         <div class="buttons">
           <button class="setting-btn">Настройки</button>
           <button class="exit-btn">Выйти</button>
         </div>
-        <div class="chatbox">
-          <div class="chat__item__personal">
-              <div class="chat__message">
-                <div class="chat__message-content">Я: Добрый день!</div>
-                <div class="chat__message-time">18:45</div>
-              </div>
-          </div>
-    
-          <div class="chat__item__client">
-            <div class="chat__messages">
-              <div class="chat__message">
-                <div class="chat__message-content">Собеседник мой: Добрый день!</div>
-                <div class="chat__message-time">18:45</div>
+        <div class="chatbox__container">
+          <div class="chatbox">
+            <div class="chat__item__personal">
+                <div class="chat__message">
+                  <div class="chat__message-content">Я: Добрый день!</div>
+                  <div class="chat__message-time">18:45</div>
+                </div>
+            </div>
+            <div class="chat__item__client">
+              <div class="chat__messages">
+                <div class="chat__message">
+                  <div class="chat__message-content">Собеседник мой: Добрый день!</div>
+                  <div class="chat__message-time">18:45</div>
+                </div>
               </div>
             </div>
-          </div>
-  
-          <div class="chat__item__client">
-            <div class="chat__messages">
-              <div class="chat__message">
-                <div class="chat__message-content">Собеседник мой: А это второе и, кажется, оно очень 
-                  длинное, чтобы поместиться на 
-                  одной строке</div>
-                <div class="chat__message-time">18:45</div>
+            <div class="chat__item__client">
+              <div class="chat__messages">
+                <div class="chat__message">
+                  <div class="chat__message-content">Собеседник мой: А это второе и, кажется, оно очень 
+                    длинное, чтобы поместиться на 
+                    одной строке</div>
+                  <div class="chat__message-time">18:45</div>
+                </div>
               </div>
             </div>
-          </div>
-          
-          <div class="chat__item__personal">
-            <div class="chat__messages">
-              <div class="chat__message">
-                <div class="chat__message-content">Я: Добрый день!</div>
-                <div class="chat__message-time">18:45</div>
+            <div class="chat__item__personal">
+              <div class="chat__messages">
+                <div class="chat__message">
+                  <div class="chat__message-content">Я: Добрый день!</div>
+                  <div class="chat__message-time">18:45</div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="sending__block">
+        <template class="template">
+          <div class="chat__item__personal">
+            <div class="chat__messages">
+              <div class="chat__message">
+                <div class="chat__message-content">Я: Добрый день!</div>
+                <div class="chat__message-time">18:45</div>
+              </div>
+            </div>
+          </div>
+        </template>
+        <form class="sending__form">
           <input type="text" name="" id="" class="input" placeholder="Cообщение..">
            <button class="send-btn">
             <img src="https://img.icons8.com/external-flatart-icons-outline-flatarticons/64/000000/external-send-basic-ui-elements-flatart-icons-outline-flatarticons.png"/>
            </button>
-        </div>
+        </form>
       </div>
-    </div>
-    
+    </section>
+    <section class="authorization">
+      <div class="authorization__block">
+        <div class="authorization__content">
+          <div class="authorization__wrapper">
+            <div class="authorization__header">
+              <p class="authorization__title">Авторизация</p>
+              <button class="close-btn">+</button>
+            </div>
+            <form action="#" class="authorization__form">
+              <p>Почта:</p>
+                <input type="text" name="mail" minlength="3" maxlength="25" class="email-input" placeholder="Введите e-mail">
+                <button class="authorization-btn">Получить код</button>
+            </form>
+          </div>
+        </div>  
+      </div>
+    </section>
+    <section class="confirm">
+      <div class="confirm__block">
+        <div class="confirm__content">
+          <div class="confirm__wrapper">
+            <div class="confirm__header">
+              <p class="confirm__title">Подтверждение</p>
+              <button class="close-btn">+</button>
+            </div>
+            <form action="#" class="creation__name">
+              <p>Код:</p>
+                <input type="text" class="confirm-input" placeholder="Введите код">
+                <button class="confirm-btn">Войти</button>
+            </form>
+          </div>
+        </div>  
+      </div>
+    </section>
   </main>
 
-  <script src="./main.js"></script>
+  <script type="module" src="./main.js"></script>
 </body>
 </html>
