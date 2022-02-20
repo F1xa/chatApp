@@ -14,14 +14,23 @@
   },
   
   SETTINGS : {
-    BLOCK : document.querySelector('.setting')
+    BLOCK : document.querySelector('.setting'),
+    INPUT : document.querySelector('.creation__name-input'),
+    BUTTON : document.querySelector('.setting__send-btn'),
+    FORM : document.querySelector('.setting__form')
   },
 
   AUTHORIZATION : {
-    BUTTON_GET : document.querySelector('.authorization-btn'),
+    BUTTON : document.querySelector('.authorization-btn'),
     INPUT : document.querySelector('.email-input'),
     FORM : document.querySelector('.authorization__form')
+  },
+
+  CONFIRM : {
+    BUTTON : document.querySelector('.confirm-btn'),
+    INPUT : document.querySelector('.confirm-input'),
+    FORM : document.querySelector('.confirm__form')
   }
 }
 
-  export const URL = 'https://chat1-341409.oa.r.appspot.com/api/user';
+  export const URL = 'https://chat1-341409.oa.r.appspot.com';

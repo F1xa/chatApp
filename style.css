@@ -170,7 +170,7 @@ main {
 /* ---- setting block ---- */
 
 .setting {
-  display: none;
+  display: block;
 }
 
 .setting__block, 
